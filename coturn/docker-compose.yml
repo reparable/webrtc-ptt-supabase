@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  coturn:
+    image: instrumentisto/coturn
+    container_name: coturn
+    restart: unless-stopped
+    ports:
+      - "3478:3478"
+      - "3478:3478/udp"
+      - "49152-65535:49152-65535/udp"
+    volumes:
+      - ./turnserver.conf:/etc/coturn/turnserver.conf:ro
+    environment:
+      - TZ=UTC
