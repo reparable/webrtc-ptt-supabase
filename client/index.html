@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WebRTC PTT Chat</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section id="auth">
+      <h2>Sign up / Sign in</h2>
+      <input id="email" placeholder="Email" />
+      <input id="password" placeholder="Password" type="password" />
+      <input id="username" placeholder="Username (for signup)" />
+      <input id="fullname" placeholder="Full name (for signup)" />
+      <div>
+        <button id="signup">Sign Up</button>
+        <button id="signin">Sign In</button>
+        <button id="signout" style="display:none">Sign Out</button>
+      </div>
+      <div id="me" style="display:none"></div>
+    </section>
+
+    <section id="lobby" style="display:none">
+      <h2>Lobby</h2>
+      <input id="room" placeholder="Room name" />
+      <button id="join">Join Room</button>
+      <button id="leave" style="display:none">Leave Room</button>
+      <div>
+        <label>Push-to-talk keybind:</label>
+        <input id="keybind" placeholder="Click and press a key" />
+      </div>
+      <div>
+        <button id="ptt">Push to Talk (Hold)</button>
+        <button id="record">Start Recording</button>
+      </div>
+      <div id="peers"></div>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
