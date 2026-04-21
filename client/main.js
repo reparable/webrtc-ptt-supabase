@@ -2,8 +2,8 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
 // Replace these with your Supabase project values or inject via a build step
-const SUPA_URL = '<YOUR_SUPABASE_URL>';
-const SUPA_ANON_KEY = '<YOUR_SUPABASE_ANON_KEY>';
+const SUPA_URL = 'https://kjuagdfgeobfuctkxbbz.supabase.co';
+const SUPA_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtqdWFnZGZnZW9iZnVjdGt4YmJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzNzM3MTEsImV4cCI6MjA5MTk0OTcxMX0.u3efyryueBFBzTutswrQtXPxtWmVKqvysk8B7_5nUtw';
 const supabase = createClient(SUPA_URL, SUPA_ANON_KEY);
 
 // ICE config with STUN and TURN placeholder (TURN credentials can be fetched from server)
