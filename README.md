@@ -22,3 +22,5 @@ Browser WebRTC push-to-talk voice chat with Supabase auth, TURN (Coturn), and SF
 7. Open `http://localhost:8080`.
 
 See `server/README_SETUP.md` for full setup and mediasoup notes.
+
+https://reparable.github.io/webrtc-ptt-supabase/client/index.html
