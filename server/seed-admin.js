@@ -14,9 +14,9 @@ const supabaseAdmin = createClient(SUPA_URL, SERVICE_ROLE_KEY);
 
 async function seedAdmin() {
   const email = 'admin@example.com';
-  const password = 'admin';
-  const username = 'admin';
-  const full_name = 'admin';
+  const password = 'admin1';
+  const username = 'admin1';
+  const full_name = 'admin1';
 
   const { data, error } = await supabaseAdmin.auth.admin.createUser({
     email,
